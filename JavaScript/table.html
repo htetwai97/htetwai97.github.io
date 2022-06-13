@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="12px" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        
+
+        <tbody id="info">
+           
+        </tbody>
+    </table>
+    <br><br>
+    
+    <label for="name">Name</label>
+    <input type="text" name="" id="name"><br><br>
+    <label for="age">Age</label>
+    <input type="number" name="" id="age"><br><br>
+    <button type="button" onclick="showtable()">Add</button>
+    <script>
+
+        function showtable(){
+        
+            let name=document.querySelector('#name').value;
+            console.log(name);
+            let age=document.querySelector('#age').value;
+            console.log(age);
+
+               let myData = `<tr>
+                    <td>${name}</td>
+                    <td>${age}</td>
+                    <tr/>`;
+                
+                    let info = document.querySelector('#info');
+                    info.innerHTML = myData;
+            
+        }
+    </script>
+    
+</body>
+</html>

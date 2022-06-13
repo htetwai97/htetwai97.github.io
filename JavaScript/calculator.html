@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+   }
+   #heading{
+    text-align: center;
+   }
+   .whole_area{
+    margin:50px 500px
+   }
+   .content{
+    margin-top: 15px;
+   }
+   label{
+    font-size: 19px;
+    color: darkslateblue;
+   }
+   p{
+    font-size: 15px;
+    color: red;
+   }
+   input{
+    font-size: 17px;
+    border-radius: 7px;
+    width: 70%;
+    height: 30px;
+   }
+   input:focus{
+    width: 73%;
+    height: 35px;
+    background-color:lightyellow;
+    box-shadow: inset;
+   }
+   .calculate{
+    height: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 17%;
+    background-color: darkslategrey;
+    color: whitesmoke;
+   }
+   .calculate:focus{
+    height: 32px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 20%;
+   }
+  
+   
+    </style>
+</head>
+<body>
+    <div class="whole_area">
+        <h2 id="heading">BMI Calculator(formula = weight/height*height)</h2>
+            <div class = "content">
+                <label for="weight" >Weights(lbs)</label><br>
+                <input type="number" name="" id="weight">
+                <p>This field is required!</p>
+            </div>
+            <div  class = "content">
+                <label for="foot">Foot(ft)</label><br>
+                <input type="number" name="" id="foot"> 
+                <p>This field is required!</p>
+            </div>
+            <div  class = "content">
+                <label for="inches">Inches(inc)</label><br>
+                <input type="number" name="" id="inches">
+                <p>This field is required!</p>
+        </div><br>
+        <button class="calculate">Calculate</button>
+    </div>
+   
+    
+   
+
+   
+</body>
+</html>
